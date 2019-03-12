@@ -10,7 +10,6 @@
         android:id="@+id/ivProfileImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginRight="5dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
