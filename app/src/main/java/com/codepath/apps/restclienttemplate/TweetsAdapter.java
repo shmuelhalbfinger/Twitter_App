@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder>{
@@ -41,6 +43,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         holder.tvBody.setText(tweet.body);
         holder.tvScreenName.setText(tweet.user.screenName);
         Glide.with(context).load(tweet.user.profileImageUrl).into(holder.ivProfileImage);
+        holder.tvTime.setText(tweet.getFormattedTimeStamp());
     }
 
     @Override
@@ -66,6 +69,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         public ImageView ivProfileImage;
         public TextView tvScreenName;
         public TextView tvBody;
+        public TextView tvTime;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -73,6 +77,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             ivProfileImage = itemView.findViewById(R.id.ivProfileImage);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
             tvBody = itemView.findViewById(R.id.tvBody);
+            tvTime = itemView.findViewById(R.id.tvTime);
         }
     }
 }

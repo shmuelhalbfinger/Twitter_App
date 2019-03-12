@@ -28,4 +28,12 @@
         android:layout_toEndOf="@+id/ivProfileImage"
         android:text="This is my tweet!" />
 
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_toEndOf="@+id/ivProfileImage"
+        android:text="Time" />
+
 </RelativeLayout>
