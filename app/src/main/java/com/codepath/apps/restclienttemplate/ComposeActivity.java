@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcels;
@@ -49,7 +50,7 @@ public class ComposeActivity extends AppCompatActivity {
                     Toast.makeText(ComposeActivity.this, "Your tweet is too long", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Toast.makeText(ComposeActivity.this, tweetContent, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ComposeActivity.this, tweetContent ,Toast.LENGTH_SHORT).show();
                 //Make API call to Twitter to publish the content in edit text
                 client.composeTweet(tweetContent, new JsonHttpResponseHandler() {
                     @Override
@@ -64,7 +65,7 @@ public class ComposeActivity extends AppCompatActivity {
                             //closes the activity, pass data to parent
                             finish();
                         } catch (JSONException e) {
-                            e.printStackTrace();
+
                         }
                     }
 
