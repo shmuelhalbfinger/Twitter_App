@@ -81,7 +81,7 @@ public class TimelineActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.compose) {
             //Tapped on compose icon
             Intent i = new Intent(this, ComposeActivity.class);
-            startActivityForResult(i, REQUEST_CODE);
+            this.startActivityForResult(i, REQUEST_CODE);
             //Navigate to a new activity
             return true;
         }
