@@ -65,7 +65,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/shmuelhalbfinger/Twitter_App/blob/master/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='https://github.com/shmuelhalbfinger/Twitter_App/blob/master/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= title='Video Walkthrough 2' width='' alt='Video Walkthrough' />
 
 GIF created with GifCam.
 
