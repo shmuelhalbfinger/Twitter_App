@@ -86,7 +86,6 @@ public class ComposeActivity extends AppCompatActivity {
         etCompose.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
-                tvTweetChar.setText("/140");
             }
 
             @Override
