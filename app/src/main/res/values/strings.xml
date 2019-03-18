@@ -7,5 +7,7 @@
     <string name="intent_host">cprest</string>
     <string name="compose_hint">What\'s on your mind?</string>
     <string name="tweet">Tweet</string>
+    <string name="characters_typed">Characters Typed</string>
+    <string name="Characters_Typed">/140</string>
 
 </resources>
